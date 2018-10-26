@@ -1,0 +1,95 @@
+html {
+	height: 100%;
+}
+
+body {
+	font-family: "lucida sans", arial, sans-serif;
+	padding: 0px;
+	margin: 0px;
+	font-size: .78em;
+	background: #F6F4F0;
+	color: #635B53;
+}
+
+p {
+	margin: 0px;
+	/* padding: 0px 0px 16px 0px; */
+	line-height: 1.7em;
+}
+
+h1 {
+	font-size: 150%;
+	/* padding: 7px 0px 5px 0px; */
+	padding: 5px 20px 5px 0px;
+	margin: 0px 0px 12px 0px;
+	font-weight: normal;
+	/* color: #342F28; */
+	color: #635B53;
+	font-family: serif;
+	text-transform: uppercase;
+	border-bottom: 1px solid #CCC6B4;
+}
+
+#main {
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+#header {
+	background: url(../img/back.png) repeat-x;
+	height: 131px;
+	overflow: hidden;
+	/* height: 127px; */
+/* 	width: 870px;
+	height: 127px;
+	position: absolute; 
+	top: 0;
+	left: 0;} */
+}
+
+#logo {
+	text-align: center;
+	/* width: 870px;
+	height: 17px;
+	position: relative;
+	background: transparent url(logo.png) no-repeat right; */
+}
+
+#logo h1, h2 {
+	font: normal 200% 'century gothic', arial, sans-serif;
+	border-bottom: 0;
+	text-transform: none;
+	margin: 0px 0px 0px 9px;
+	/* font-family: "century gothic", arial, sans-serif; */
+	font-size: 260%;
+	padding: 22px 0px 0px 0px;
+	color: #777;
+}
+
+#logo h2 {
+	font-size: 150%;
+	padding-top: 0px;
+}
+
+#logo img {
+	float: left;
+	padding-top: 15px;
+}
+
+#logo, #main_content {
+	margin-left: auto; 
+	margin-right: auto;
+/* 	margin-left: 50px;
+	margin-right: 50px; */
+}
+
+#main_content {
+	/* width: 1275px; */
+	width: 1200px;
+	height: 600px;
+	margin-top: 10px;
+	/* padding-right: 5px; */
+	padding: 0px 5px 0px 5px;
+	overflow: hidden;
+	border: 2px solid;
+}
