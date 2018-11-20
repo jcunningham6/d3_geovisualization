@@ -4,9 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
-		<title>D3 Montour</title>
+		<title>Faith and Reason</title>
 
 		<!--external stylesheets-->
+		<link href="https://fonts.googleapis.com/css?family=Archivo|Montserrat|Oswald" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
 		
 		<!--[if IE<9]>
@@ -18,22 +19,55 @@
 		<div id="main">
 			<!-- Title section for page -->
 			<div id="header">
-				<div id="logo">
-					<h1>D3 - MONTOUR</h1>
-				</div>
+				<h1>FAITH SEEKING UNDERSTANDING<img class="left" src="img/prayingIcon.png" width="75" height="75" align="left"><img class="right" src="img/educationHat.png" width="75" height="75" align="right"></h1>
+				<p class="header">Are belief in God and education mutually exclusive?</p>
+			</div>
+			
+			<div id="expound">
+				<h3>ST. THOMAS AQUINAS (<i>Summa Contra Gentiles, Book I, Chapter 7</i>)</h3>
+				<p><i>"The natural dictates of reason must certainly be quite true: it is impossible to think of their being otherwise. Nor again is it permissible to believe that the tenets of faith are false, being so evidently confirmed by God.  Since therefore falsehood alone is contrary to truth, it is impossible for the truth of faith to be contrary to principles known by natural reason."</i></p>
+				<br>
+				<form id="layerOptions">
+					<input  type='radio' value="colleges" name="mode">Colleges</input>
+					<input  type='radio' value="worshipsites" name="mode">Worship Sites</input>
+					<input  type='radio' value="nopoints" name="mode">Remove All Points</input>
+				</form>
 			</div>
 			
 			<div id="main_content">
-					<h1>D3 Visualization</h1>
+			</div>
+			
+			<div id="summary">
+				<h3>BACKGROUND INFORMATION</h3>
+				<p>For a different project, I produced a <a href="https://jcunningham6.github.io/portfolio/storymap.html" target="_blank">story map</a> which explored the relationship between faith and reason, and specifically asked the question - Is an increase in education commensurate with a decrease in the belief in God? That is, are faith and reason incompatible?</p>
+				<br>
+				<p>This map should be viewed as a small addendum to that earlier project. I have elected to enhance the visual exploration of the faith-reason relationship in one particular state (West Virginia) using a small subset of attributes (religious congregation membership, college degree attainment, population density, income, and age). Congregation membership and education are the primary foci, but I have admitted a few other attributes to allow for a broader comparison of county characteristics.</p>
+				<br>
+				<p>The user can also elect to turn on/off point locations for colleges and worship sites within the state in order to get an idea of how these sites are distributed. Zoom/Panning is also enabled on the map.</p>
+			</div>
+			
+			<div id="footer">
+				<h3>DATA DETAILS and REFERENCES:</h3>
+				<ul>
+					<li><b>Population Density</b> represents the number of people per square mile. [SOURCE: The United States Census Bureau - American Fact Finder (https://factfinder.census.gov)]</li>
+					<li><b>Number Belonging to Religious Congregations</b> is the rate of adherence per 1000 population. [SOURCE: The Association of Religion Data Archives (http://www.thearda.com)]</li>
+					<li><b>Percent with Bachelor's Degree or Higher</b> is the percent of the population 25 years of age and older who have attained a Bachelor's degree or higher. [SOURCE: The United States Census Bureau - American Fact Finder (https://factfinder.census.gov)]</li>
+					<li><b>Median Income</b> value is thousands earned annually. [SOURCE: The Demographic Statistical Atlas of the United States (https://statisticalatlas.com/United-States/Overview)]</li>
+					<li><b>Median Age</b> value is years. [SOURCE: The Demographic Statistical Atlas of the United States (https://statisticalatlas.com/United-States/Overview)]</li>
+					<li><b>Colleges</b> point data source: West Virginia GIS Technical Center [WVGISTC] (http://wvgis.wvu.edu/index.php)</li>
+					<li><b>Worship Sites</b> point data source: Esri USA Institutions (https://www.arcgis.com/home/item.html?id=007ff07891e34e339a6da82a5c44fd31)</li>
+				</ul>
 			</div>
 		</div>
 		
 		<!--external scripts-->
-		<script type="text/javascript" src="lib/jquery-3.3.1.js"></script>
 		<script type="text/javascript" src="lib/d3/d3.js"></script>
-		<script type="text/javascript" src="lib/d3-queue/d3-queue.js"></script>
 		<script type="text/javascript" src="lib/topojson/topojson.js"></script>
+		<script src="https://d3js.org/d3-collection.v1.min.js"></script>
+		<script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
+		<script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+		<script src="https://d3js.org/d3-request.v1.min.js"></script>
+		<script src="https://d3js.org/d3-queue.v3.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
-		
 	</body>
 </html>
